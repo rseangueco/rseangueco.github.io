@@ -1,1 +1,128 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Portfolio</title>
+
+        <style>
+            .top-container{
+                display: flex;
+                /*border-style: solid;
+                border-width: 2px;
+                border-color: black;*/
+                flex-direction: column;
+            }
+
+            .bot-container{
+                display: flex;
+                /*border-style: solid;
+                border-width: 2px;
+                border-color: black;*/
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .flex-item{
+                display: flex;
+                /*border-style: solid;
+                border-width: 2px;
+                border-color: red;*/
+                align-items: center;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .footer-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            header{
+                display: flex;
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+                padding: 10px;
+                margin: -10px;
+                flex-direction: column;
+                align-items: center;
+                background-color: black;
+                color: white;
+            }
+
+            body{
+                background-color: lightyellow;
+            }
+
+            footer{
+                display: flex;
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+                padding: 10px;
+                margin: -10px;
+                justify-content: center;
+                background-color: black;
+                color: white;
+            }
+
+            .project-images{
+                flex: 1;
+                display: flex;
+                justify-content: space-evenly;
+                border-width: 1px;
+                border-color: red;
+                border-style: solid;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <header id="header">
+            <img src="placeholder.png" width="150px" height="150px"/>
+            <p>Navigation Bar</p>
+        </header>
+
+        <body>
+            <div class="top-container">
+                <div class="flex-item" id="featured-photo">
+                    <h1>Featured Photo</h1>
+                    <img src="placeholder.png" width="400px" height="400px"/>
+                </div>
+                <div class="flex-item" id="previous-projects">
+                    <h1>Previous Projects</h1>
+                    <div class="project-images">
+                        <img src="placeholder.png" width="200px" height="200px"/>
+                        <img src="placeholder.png" width="200px" height="200px"/>
+                        <img src="placeholder.png" width="200px" height="200px"/>
+                        <img src="placeholder.png" width="200px" height="200px"/>
+                    </div>
+                </div>
+                <div class="bot-container">
+                    <div class="flex-item" id="skills">
+                        <h1>Skills</h1>
+                        <p>(skills)</p>
+                    </div>
+                    <div class="flex-item" id="autobiography">
+                        <h1>Autobiography</h1>
+                        <p>(autobiography)</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+
+        <footer id="footer">
+            <img src="placeholder.png" width="150px" height="150px"/>
+            <div class="footer-info">
+                <p>Address/Contact Information, Personal Website</p>
+                <p>Copyright Information</p>
+                <a href=".header">Back to top</a>
+            </div>
+        </footer>
+    </body>
+
+</html>
